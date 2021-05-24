@@ -13,9 +13,9 @@ logging:
     org.springframework: DEBUG
 
 spring:
-  # data:
-  #   rest:
-  #     defaultMediaType: "application/json"
+  data:
+    rest:
+      defaultMediaType: "application/json"
   jpa:
     hibernate:
 # marked as none so that schema.sql can create the schema for now
