@@ -17,8 +17,20 @@ public class Product {
     private String imgUrl;
     private int stockCount;
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getStockCount() {
@@ -43,10 +55,6 @@ public class Product {
 
     public void setPrice(float price) {
         this.price = price;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
 }

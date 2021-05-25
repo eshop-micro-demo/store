@@ -13,9 +13,9 @@ logging:
     org.springframework: DEBUG
 
 spring:
-  # data:
-  #   rest:
-  #     defaultMediaType: "application/json"
+  data:
+    rest:
+      defaultMediaType: "application/json"
   application:
     name: store
     sleuth:
