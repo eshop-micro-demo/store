@@ -27,6 +27,7 @@ spring:
     hibernate:
 # marked as none so that schema.sql can create the schema for now
       ddl-auto: none
+
 #   security:
 #     oauth2:
 #       resourceserver:
