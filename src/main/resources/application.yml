@@ -10,7 +10,7 @@ logging:
     ROOT: INFO
     com.kubewarrior: DEBUG
     org.springframework.security: DEBUG
-    org.springframework: DEBUG
+    org.springframework: WARN
 
 spring:
   data:
@@ -41,3 +41,6 @@ spring:
 #         jwt:
 #           issuer-uri: http://localhost:9080/auth/realms/micro-auth
 #           jwk-set-uri: http://localhost:9080/auth/realms/micro-auth/protocol/openid-connect/certs
+
+client:
+  url: http://localhost:3000

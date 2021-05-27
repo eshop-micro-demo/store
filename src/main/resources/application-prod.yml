@@ -1,0 +1,24 @@
+debug: false
+
+logging:
+  level:
+    ROOT: WARN
+    org.springframework.web: TRACE
+
+spring:
+  data:
+    rest:
+      defaultMediaType: "application/json"
+  jpa:
+    hibernate:
+# marked as none so that schema.sql can create the schema for now
+      ddl-auto: none
+#   security:
+#     oauth2:
+#       resourceserver:
+#         jwt:
+#           issuer-uri: http://localhost:9080/auth/realms/micro-auth
+#           jwk-set-uri: http://localhost:9080/auth/realms/micro-auth/protocol/openid-connect/certs
+
+client:
+  url: http://dh4r4pvj.ga
