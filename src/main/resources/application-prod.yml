@@ -1,16 +1,9 @@
-debug: true
-
-server: 
-  port: 8081
-  servlet: 
-    context-path: /
+debug: false
 
 logging:
   level:
-    ROOT: INFO
-    com.kubewarrior: DEBUG
-    org.springframework.security: DEBUG
-    org.springframework: WARN
+    ROOT: WARN
+    org.springframework.web: TRACE
 
 spring:
   data:
@@ -28,4 +21,4 @@ spring:
 #           jwk-set-uri: http://localhost:9080/auth/realms/micro-auth/protocol/openid-connect/certs
 
 client:
-  url: http://localhost:3000
+  url: http://dh4r4pvj.ga
