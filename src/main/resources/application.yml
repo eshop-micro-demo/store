@@ -28,6 +28,11 @@ spring:
 # marked as none so that schema.sql can create the schema for now
       ddl-auto: none
 
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:29092
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+
 #   security:
 #     oauth2:
 #       resourceserver:
