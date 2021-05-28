@@ -1,12 +1,15 @@
-package com.kubewarrior.store.domain;
+package com.kubewarrior.checkout.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 @Entity // (name = "checkout.userorders")
-public class Userorder {
+public class Userorder implements Serializable {
+
+    private static final long serialversionUID = 129348939L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

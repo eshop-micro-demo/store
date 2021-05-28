@@ -32,6 +32,8 @@ spring:
     consumer:
       bootstrap-servers: localhost:29092
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "com.kubewarrior.checkout.domain"
 
 #   security:
 #     oauth2:
