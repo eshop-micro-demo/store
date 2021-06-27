@@ -7,7 +7,7 @@ logging:
 
 spring:
   datasource:
-    url: jdbc:postgres://store-db:5432/store
+    url: jdbc:postgresql://store-db:5432/store
     password: ${DB_ROOT_PASS}
 
 client:
