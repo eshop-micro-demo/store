@@ -9,6 +9,10 @@ spring:
   datasource:
     url: jdbc:postgresql://store-db:5432/store
     password: ${DB_ROOT_PASS}
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 client:
   url: http://dh4r4pvj.ga

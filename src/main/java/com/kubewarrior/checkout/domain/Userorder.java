@@ -4,6 +4,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.springframework.core.style.ToStringCreator;
+
 import java.io.Serializable;
 
 @Entity // (name = "checkout.userorders")
@@ -50,6 +54,10 @@ public class Userorder implements Serializable {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+    @Override
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this);
     }
 }
 
