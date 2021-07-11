@@ -9,7 +9,7 @@ create table Foo (
 );
 
 create table Product (
-   id INT NOT NULL AUTO_INCREMENT,
+   id SMALLSERIAL NOT NULL,
    name VARCHAR(200) NOT NULL,
    price float NOT NULL,
    unit varchar(40),
