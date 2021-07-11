@@ -3,7 +3,7 @@ debug: false
 logging:
   level:
     ROOT: WARN
-    org.springframework.web: TRACE
+    org.springframework: DEBUG  # TEMPORARY
 
 spring:
   datasource:
@@ -13,6 +13,13 @@ spring:
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+  application:
+      zipkin:
+        base-url: http://zipkin.monitoring:9411/
+  kafka:
+    consumer:
+      bootstrap-servers: kafka.default:9092
+
 
 client:
   url: http://dh4r4pvj.ga
