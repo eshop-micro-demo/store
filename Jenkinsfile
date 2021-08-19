@@ -13,7 +13,7 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 git branch: 'containerized', url:'https://github.com/eshop-micro-demo/store.git'
-                sh "mvn -B --no-transfer-progress -Dmaven.test.skip=true clean package jib:dockerBuild"
+                sh "mvn -B --no-transfer-progress -Pprod -Dmaven.test.skip=true clean package jib:dockerBuild"
                 sh """#! /bin/bash
                   # set -x
                   #ls -ltr
