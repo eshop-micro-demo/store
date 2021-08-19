@@ -1,7 +1,8 @@
-INSERT INTO Foo(id, name) VALUES (1, 'Foo 1');
-INSERT INTO Foo(id, name) VALUES (2, 'Foo 2');
-INSERT INTO Foo(id, name) VALUES (3, 'Foo 3');
+-- INSERT INTO Foo(id, name) VALUES (1, 'Foo 1');
+-- INSERT INTO Foo(id, name) VALUES (2, 'Foo 2');
+-- INSERT INTO Foo(id, name) VALUES (3, 'Foo 3');
 
+--  (id  bigserial not null, img_url varchar(255), name varchar(255), price float4 not null, stock_count int4 not null
 
 INSERT INTO Product (name, price, stock_count, img_url)
 VALUES('Ball', 20, 2, 'ball.svg');

@@ -14,10 +14,8 @@ spring:
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-  application:
-    sleuth:
-      zipkin:
-        base-url: http://zipkin.monitoring:9411/
+  zipkin:
+    base-url: http://zipkin.monitoring:9411/
   kafka:
     consumer:
       bootstrap-servers: kafka.default:9092

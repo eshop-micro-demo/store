@@ -18,11 +18,11 @@ spring:
       defaultMediaType: "application/json"
   application:
     name: store
-    sleuth:
-      sampler:
-        percentage: 1
-      zipkin:
-        base-url: http://localhost:9411/
+  sleuth:
+    sampler:
+      percentage: 1
+  zipkin:
+    base-url: http://localhost:9411/
   jpa:
     hibernate:
 # marked as none so that schema.sql can create the schema for now
