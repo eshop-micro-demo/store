@@ -3,8 +3,9 @@ debug: false
 logging:
   level:
     ROOT: WARN
-    org.springframework: INFO  # TEMPORARY
+    org.springframework: INFO
     org.hibernate.SQL: DEBUG
+    org.springframework.jdbc.datasource.init: DEBUG
 
 spring:
   datasource:
@@ -12,6 +13,8 @@ spring:
     password: ${DB_ROOT_PASS}
     username: postgres
     driver-class-name: org.postgresql.Driver
+    # Only for demo purpose... below setting will pickup schema.sql and data.sql and execute them
+    initialization-mode: always
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   zipkin:
