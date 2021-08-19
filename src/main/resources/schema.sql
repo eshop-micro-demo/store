@@ -2,11 +2,11 @@
 --drop table products;
 -- create schema store;
 
-create table Foo (
-   id INT NOT NULL AUTO_INCREMENT,
-   name VARCHAR(200) NOT NULL,
-   PRIMARY KEY (id)
-);
+-- create table Foo (
+--    id INT NOT NULL AUTO_INCREMENT,
+--    name VARCHAR(200) NOT NULL,
+--    PRIMARY KEY (id)
+-- );
 
 create table Product (
    id SMALLSERIAL NOT NULL,
