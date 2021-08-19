@@ -3,7 +3,8 @@ debug: false
 logging:
   level:
     ROOT: WARN
-    org.springframework: DEBUG  # TEMPORARY
+    org.springframework: INFO  # TEMPORARY
+    org.hibernate.SQL: DEBUG
 
 spring:
   datasource:
@@ -14,6 +15,7 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   application:
+    sleuth:
       zipkin:
         base-url: http://zipkin.monitoring:9411/
   kafka:
